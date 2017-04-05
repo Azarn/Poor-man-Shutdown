@@ -131,7 +131,7 @@ namespace Poor_man_s_Shutdown {
                     return;
                 }
 
-                if (!InitiateSystemShutdownEx(null, "ALLYOURBASEAREBELONGTOUS", timeout, isForced, isRebooting, reason)) {
+                if (!InitiateSystemShutdownEx(null, "Gotcha!", timeout, isForced, isRebooting, reason)) {
                     Console.WriteLine("InitiateSystemShutdownEx error: {0}", Marshal.GetLastWin32Error());
                     return;
                 }
